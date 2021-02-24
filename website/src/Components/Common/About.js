@@ -23,7 +23,7 @@ export default function About() {
           California, San Francisco Medical School.
         </p>
         <p style={{textAlign: 'justify'}}>
-          For over 25 years Karen has worked as a licensed physical therapist
+          For over 30 years Karen has worked as a licensed physical therapist
           in outpatient orthopedics. Her experience includes working with a
           broad range of people, from those with severe neurological deficits,
           repetitive strain injuries, and post-operative diagnoses, to
