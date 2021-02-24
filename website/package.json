@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://karenzindars.github.io/website",
+  "homepage" : "http://karenzindars.com/",
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
