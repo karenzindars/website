@@ -55,7 +55,7 @@ export default function Routing({ appProps }) {
     },
   ];
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         {routes.map(({ path, Component, headerText }, index) => {
           return (
