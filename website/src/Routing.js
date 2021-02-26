@@ -22,36 +22,36 @@ export default function Routing({ appProps }) {
     },
     {
       Component: About,
-      headerText: 'About', path: '/about'
+      headerText: 'About', path: '/#/about'
     },
     {
       Component: Mentoring,
-      headerText: 'Mentoring', path: '/mentoring'
+      headerText: 'Mentoring', path: '/#/mentoring'
     },
     {
       Component: Sessions,
-      headerText: 'Sessions', path: '/sessions'
+      headerText: 'Sessions', path: '/#/sessions'
     },
     {
       Component: Contact,
-      headerText: 'Contact', path: '/contact'
+      headerText: 'Contact', path: '/#/contact'
     },
     {
       Component: MentoringSchedule,
-      headerText: 'Mentoring Schedule', path: '/mentoring-schedule'
+      headerText: 'Mentoring Schedule', path: '/#/mentoring-schedule'
     },
     {
       Component: GroupClasses,
-      headerText: 'Group Classes', path: '/group-classes'
+      headerText: 'Group Classes', path: '/#/group-classes'
     },
     {
       Component: Classes,
-      headerText: 'Classes', path: '/classes'
+      headerText: 'Classes', path: '/#/classes'
     },
     {
       Component: ContinuingEducationCourses,
       headerText: 'Continuing Education Courses',
-      path: '/continuing-education-courses'
+      path: '/#/continuing-education-courses'
     },
   ];
   return (
