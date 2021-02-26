@@ -4,13 +4,13 @@ export default function Classes() {
   return (
     <div>
       <h3>
-        <a title="Group Classes" href="group-classes">
+        <a title="Group Classes" href="/#/group-classes">
           <strong>Public group classes</strong>
         </a>
       </h3>
       <h3>
         <strong>
-          <a title="Continuing Education Courses" href="/continuing-education-courses">
+          <a title="Continuing Education Courses" href="/#/continuing-education-courses">
             <span style={{color: '#ff6600'}}>PDU</span>&nbsp;classes available for occupational therapists
           </a>
         </strong>

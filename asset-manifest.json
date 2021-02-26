@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "http://karenzindars.com/static/css/main.57794d22.chunk.css",
-    "main.js": "http://karenzindars.com/static/js/main.781a55f8.chunk.js",
-    "main.js.map": "http://karenzindars.com/static/js/main.781a55f8.chunk.js.map",
+    "main.js": "http://karenzindars.com/static/js/main.4bee4f07.chunk.js",
+    "main.js.map": "http://karenzindars.com/static/js/main.4bee4f07.chunk.js.map",
     "runtime-main.js": "http://karenzindars.com/static/js/runtime-main.28249f9f.js",
     "runtime-main.js.map": "http://karenzindars.com/static/js/runtime-main.28249f9f.js.map",
     "static/js/2.8842abe4.chunk.js": "http://karenzindars.com/static/js/2.8842abe4.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.28249f9f.js",
     "static/js/2.8842abe4.chunk.js",
     "static/css/main.57794d22.chunk.css",
-    "static/js/main.781a55f8.chunk.js"
+    "static/js/main.4bee4f07.chunk.js"
   ]
 }

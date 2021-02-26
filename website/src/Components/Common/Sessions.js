@@ -30,7 +30,7 @@ export default function Sessions() {
       scheduled by contacting Karen directly via email or via telephone.
     </p>
     <p>
-      <a style={{color: '#0000ff'}} href="/contact">
+      <a style={{color: '#0000ff'}} href="/#/contact">
         Please visit the contact page to set up a session.
       </a>
     </p>

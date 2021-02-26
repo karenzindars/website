@@ -25,7 +25,7 @@ export default function Home() {
       1979 17th Avenue San Francisco, CA 94116      415-566-2023
       </p>
       <p style={{textAlign: 'center'}}>
-        <a title="Contact" href="/contact">karenzindars@gmail.com</a>
+        <a title="Contact" href="/#/contact">karenzindars@gmail.com</a>
       </p>
     </div>
   )

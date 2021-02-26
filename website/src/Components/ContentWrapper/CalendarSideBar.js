@@ -8,11 +8,11 @@ export default function CalendarSideBar() {
       </h4>
       <hr />
       <p>
-        <a href="mentoring-schedule">Mentoring Schedule</a>
+        <a href="/#/mentoring-schedule">Mentoring Schedule</a>
       </p>
       <hr />
       <p>
-        <a href="continuing-education-courses">Class Schedule</a>
+        <a href="/#/continuing-education-courses">Class Schedule</a>
       </p>
     </div>
   )

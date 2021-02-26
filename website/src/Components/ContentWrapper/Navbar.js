@@ -35,12 +35,12 @@ function MySophisticatedDropdownMenu() {
 
 export default function Navbar() {
   const decisionsByBorgore = [
-    { label: 'HOME', route: '/home' },
-    { label: 'ABOUT', route: '/about' },
-    { label: 'MENTORING', route: '/mentoring' },
-    { label: 'SESSIONS', route: '/sessions' },
-    { label: 'CLASSES»', route: '/damn' }, // todo make a component
-    { label: 'CONTACT', route: '/contact' },
+    { label: 'HOME', route: '/#/home' },
+    { label: 'ABOUT', route: '/#/about' },
+    { label: 'MENTORING', route: '/#/mentoring' },
+    { label: 'SESSIONS', route: '/#/sessions' },
+    { label: 'CLASSES»', route: '/#/classes' }, // todo make a component
+    { label: 'CONTACT', route: '/#/contact' },
   ];
   return (
     <div className="navbar">
