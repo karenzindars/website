@@ -18,9 +18,9 @@ const Menu = ({ children }) => {
 
 function MySophisticatedDropdownMenu() {
   const items = [
-    {label: 'Classes', href: "/classes"},
-    {label: 'Group Classes', href: "/group-classes"},
-    {label: 'Continuing Education Courses', href: "/continuing-education-courses"},
+    {label: 'Classes', href: "/#/classes"},
+    {label: 'Group Classes', href: "/#/group-classes"},
+    {label: 'Continuing Education Courses', href: "/#/continuing-education-courses"},
   ];
   return (
     <Menu>
