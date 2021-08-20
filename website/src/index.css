@@ -89,11 +89,17 @@ hr {
 }
 
 .navbar-menu-container {
-  padding-top: 31px;
-  float: right;
+  width:80%;
+  display:table;
+  margin:2em auto;
+  padding:0;
 }
 
 .nav-item {
+  display:table-cell;
+  width:15%;
+  margin:0;
+  padding:0;
   vertical-align: baseline;
   background: transparent;
   outline: none;
@@ -103,23 +109,28 @@ hr {
   font-style: normal;
   font-size: 13px;
   text-decoration: none;
-  display: table-cell;
 }
 
 .navbar {
   margin: auto;
-  height: 92px;
+  height: 33px;
   width: 980px;
   position:relative;
-  text-align: right;
   background-color: #b8d0d1;
   display: table;
+  table-layout: fixed;
   /* float: right; */
 }
 
 .menu {
-  /* position: relative; */
+  width: 40px;
   width: 200px;
+}
+
+.menu:hover {
+  /* position: relative; */
+  transition: 0.5s;
+  align-items: left;
 }
 
 .item {
