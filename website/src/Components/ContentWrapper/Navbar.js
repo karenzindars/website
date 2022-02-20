@@ -49,7 +49,7 @@ export default function Navbar() {
           if (label !== 'CLASSES»') {
             return <a key={index} href={route} className="nav-item">{label}</a>
           } else {
-            return <MySophisticatedDropdownMenu />
+            return <MySophisticatedDropdownMenu key={index} />
           }
         })}
       </div>

@@ -18,10 +18,6 @@ export default function ContinuingEducationCourses() {
           karenzindars@gmail.com
         </a>
       </h4>
-      <p>
-        <img className="fmethod-img"
-              alt="Feldenkrais method" src="img/bfam-diagram.png" />
-      </p>
     </div>
   )
 }
