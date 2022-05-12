@@ -18,7 +18,13 @@ export default function GroupClasses() {
         life.
       </p>
       <p>
-        Please refer to the calendar for upcoming workshops and classes.
+        See below section for class info. Clicking the image will enlarge it in a new tab.
+      </p>
+      <p>
+        <a rel="noreferrer" target="_blank" id='external-img' href='https://user-images.githubusercontent.com/36345325/167992096-ab8c2346-5388-4af1-9e5f-d49fa60e13ed.png'>
+          <img className="fmethod-img"
+            alt="2022 Flyer" src="img/2022flyermymomisthebest.png" />
+        </a>
       </p>
       <p>
         <img className="fmethod-img"
