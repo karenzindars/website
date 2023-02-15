@@ -5,29 +5,29 @@ export default function MentoringSchedule() {
     <div>
       <h3>
         <span style={{ color: '#0000ff' }}>
-          Small Group Mentoring – 3 to 6 people
+          Small Group Mentoring - 3 to 6 people
         </span>
       </h3>
       <p>
-        $80/ person for 3 people – 2 hours
+        $100/ person for 3 people - 2 hours
       </p>
       <p>
-        $75/person for 4 – 6 people – 2 hours
+        $75/person for 4 - 6 people - 2 hours
       </p>
       <p>
-        Location – 1979 17th Avenue San Francsico, CA 94116
+        Location - 1979 17th Avenue San Francsico, CA 94116
       </p>
       <div>&nbsp;___________________________________________</div>
       <h3>
         <span style={{ color: '#0000ff' }}>
-          Private mentoring sessions – 1 to 2 people
+          Private mentoring sessions - 1 to 2 people
         </span>
       </h3>
       <p>
-        $120/hour
+        $150/hour
       </p>
       <p>
-        Location – 1979 17th Avenue San Francsico, CA 94116
+        Location - 1979 17th Avenue San Francsico, CA 94116
       </p>
       <div>&nbsp;___________________________________________</div>
       <p>
