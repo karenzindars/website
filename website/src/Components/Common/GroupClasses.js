@@ -18,15 +18,6 @@ export default function GroupClasses() {
         life.
       </p>
       <p>
-        See below section for class info. Clicking the image will enlarge it in a new tab.
-      </p>
-      <p>
-        <a rel="noreferrer" target="_blank" id='external-img' href='https://user-images.githubusercontent.com/36345325/218910138-e5506911-7a60-4a75-a882-a3ebdee76e5f.png'>
-          <img className="fmethod-img"
-            alt="2022 Flyer" src="img/2023flyermymomisthebest.png" />
-        </a>
-      </p>
-      <p>
         <img className="fmethod-img"
           alt="Feldenkrais method" src="img/group-photo.jpg" />
       </p>
