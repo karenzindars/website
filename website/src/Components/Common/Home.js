@@ -30,10 +30,14 @@ class Home extends Component {
               transition={{ duration: 0.5, delay: 1.5}}
               className='flex justify-center space-x-3'>
               <a href="/#/about">
-                <button className="btn btn-outline text-blue-400 hover:text-black border border-blue-400">Learn More</button>
+                <button className="btn btn-outline text-blue-400 hover:text-black border border-blue-400 text-lg">
+                  Learn More
+                </button>
               </a>
               <a href="/#/contact">
-                <button className="btn btn-outline text-green-300 hover:text-black border border-green-300">Contact</button>
+                <button className="btn btn-outline text-green-300 hover:text-black border border-green-300 text-lg">
+                  Contact</
+                button>
               </a>
             </motion.div>
           </div>

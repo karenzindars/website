@@ -13,7 +13,7 @@ export default function UserNavBar() {
       <>
         {routesList.map((link) => {
           return (
-            <li key={link.route}><a href={link.route}>{link.title}</a></li>
+            <li key={link.route}><a className='text-lg font-medium' href={link.route}>{link.title}</a></li>
           );
         })}
       </>
@@ -25,7 +25,7 @@ export default function UserNavBar() {
       <>
         {unauthedRoutes.map((link) => {
           return (
-            <li key={link.route}><a href={link.route}>{link.title}</a></li>
+            <li key={link.route}><a className='text-lg font-medium' href={link.route}>{link.title}</a></li>
           );
         })}
       </>
@@ -34,7 +34,7 @@ export default function UserNavBar() {
 
   const maybeShowHome = () => {
     if (window.location.hash !== '#/') {
-      return <li ><a href="/">Home</a></li>
+      return <li><a className='text-lg font-medium' href="/">Home</a></li>
     }
   }
 
