@@ -21,7 +21,7 @@ class Home extends Component {
                 transition={{ duration: 1, delay: 0.5}}
                 style={{ color: '#adb2ba' }}
                 className="text-base  text-center xl:text-left md:text-2xl">
-                A Clear, Fun and Interesting, Efficient, and Simple way to Learn and Teach The Feldenkrais Method®
+                A Clear, Fun and Interesting, Efficient and Simple way to Learn and Teach The Feldenkrais Method®
               </motion.h3>
             </div>
             <motion.div
