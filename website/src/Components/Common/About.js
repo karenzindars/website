@@ -8,11 +8,11 @@ export default function About() {
           Karen Zindars, MPT, GCFT, MBS Master Practitioner
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="flex flex-col lg:flex-row justify-center items-center">
         <div className="md:w-1/4 flex justify-center items-center mb-4 md:mb-0">
-          <img className="fmethod-img"
+          <img
             style={{ transform: 'scale(100%)', float: 'right', padding: '10px', top: 0 }}
-            alt="Feldenkrais method" src="img/karen-ballet.jpg" />
+            alt="Karen Ballet" src="img/karen-ballet.jpg" />
         </div>
         <div className="md:w-1/2 p-4 rounded shadow-lg mb-4 md:mb-0">
           <p className="mb-4">
@@ -54,10 +54,10 @@ export default function About() {
             knowledge in professional training programs.
           </p>
         </div>
-        <div className="md:w-1/4 flex justify-center items-center">
-          <img className="fmethod-img"
-            style={{ transform: `scale(100%)`, float: 'right', top: 0, }}
-            alt="Feldenkrais method" src="img/karen-garden.jpg" />
+        <div className="hidden md:w-1/4 lg:flex justify-center items-center">
+          <img
+            className='w-4/6'
+            alt="Karen" src="img/karen-garden.jpg" />
         </div>
       </div>
     </div>
