@@ -19,7 +19,8 @@ class Home extends Component {
                 initial={{ opacity: 0, x: 100}}
                 animate={{ opacity: 1, x:0}}
                 transition={{ duration: 1, delay: 0.5}}
-                className="text-base text-center xl:text-left md:text-2xl">
+                style={{ color: '#adb2ba' }}
+                className="text-base  text-center xl:text-left md:text-2xl">
                 A Clear, Fun and Interesting, Efficient, and Simple way to Learn and Teach The Feldenkrais Method®
               </motion.h3>
             </div>
@@ -29,10 +30,10 @@ class Home extends Component {
               transition={{ duration: 0.5, delay: 1.5}}
               className='flex justify-center space-x-3'>
               <a href="/#/about">
-                <button className="btn btn-outline btn-primary hover:!text-white">Learn More</button>
+                <button className="btn btn-outline text-blue-400 hover:text-black border border-blue-400">Learn More</button>
               </a>
               <a href="/#/contact">
-                <button className="btn btn-outline btn-accent hover:!text-white">Contact</button>
+                <button className="btn btn-outline text-green-300 hover:text-black border border-green-300">Contact</button>
               </a>
             </motion.div>
           </div>
