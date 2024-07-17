@@ -1,58 +1,69 @@
-import React from 'react'
+import React from 'react';
 
-const Menu = ({ children }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [head, ...tail] = React.Children.toArray(children);
-
-  return (
-    <div
-      className='menu'
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
-    >
-      {head}
-      {isOpen && <div className='open'>{tail}</div>}
-    </div>
-  );
-};
-
-function MySophisticatedDropdownMenu() {
-  const items = [
-    {label: 'Classes', href: "/#/classes"},
-    {label: 'Group Classes', href: "/#/group-classes"},
-    {label: 'Continuing Education Courses', href: "/#/continuing-education-courses"},
+export default function UserNavBar() {
+  const unauthedRoutes = [
+    { title: 'About', route: '/#/about' },
+    { title: 'Contact', route: '/#/contact' },
   ];
-  return (
-    <Menu>
-      {items.map(({label, href}, index) => (
-        <div key={index} onClick={() => {}}>
-          <a {...{href}} className="nav-item">{label}</a>
-        </div>
-      ))}
-    </Menu>
-  );
-}
 
-export default function Navbar() {
-  const decisionsByBorgore = [
-    { label: 'HOME', route: '/#/home' },
-    { label: 'ABOUT', route: '/#/about' },
-    { label: 'MENTORING', route: '/#/mentoring' },
-    { label: 'SESSIONS', route: '/#/sessions' },
-    { label: 'CLASSES»', route: '/#/classes' }, // todo make a component
-    { label: 'CONTACT', route: '/#/contact' },
-  ];
-  return (
-    <div className="navbar">
-      <div className="navbar-menu-container">
-        {decisionsByBorgore.map(({ label, route }, index) => {
-          if (label !== 'CLASSES»') {
-            return <a key={index} href={route} className="nav-item">{label}</a>
-          } else {
-            return <MySophisticatedDropdownMenu key={index} />
-          }
+
+  const getRoutesForNavbar = () => {
+    let routesList = unauthedRoutes;
+    return (
+      <>
+        {routesList.map((link) => {
+          return (
+            <li key={link.route}><a href={link.route}>{link.title}</a></li>
+          );
         })}
+      </>
+    );
+  };
+
+  const getSignedOutDropdownRoutes = () => {
+    return (
+      <>
+        {unauthedRoutes.map((link) => {
+          return (
+            <li key={link.route}><a href={link.route}>{link.title}</a></li>
+          );
+        })}
+      </>
+    );
+  };
+
+  const maybeShowHome = () => {
+    if (window.location.hash !== '#/') {
+      return <li ><a href="/">Home</a></li>
+    }
+  }
+
+  return (
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
+        <ul className="menu menu-horizontal">
+          {maybeShowHome()}
+        </ul>
+      </div>
+
+      <div className="hidden navbar-center sm:flex">
+        <ul className="menu menu-horizontal">
+          {getRoutesForNavbar()}
+        </ul>
+      </div>
+
+      <div className="navbar-end">
+        <div className="dropdown dropdown-end sm:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
+            <button className="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+            </button>
+          </div>
+          <ul tabIndex={0} className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+            {getSignedOutDropdownRoutes()}
+          </ul>
+        </div>
       </div>
     </div>
-  )
+  );
 }
