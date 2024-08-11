@@ -25,7 +25,9 @@ export default function Contact() {
       return;
     }
     const params = {
-      ...form.current,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
       'g-recaptcha-response': captchaValue,
     };
     setLoading(true);
@@ -34,7 +36,6 @@ export default function Contact() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         params,
-        // emailjs public key
         {
           publicKey: EMAILJS_PUBLIC_KEY
         },
@@ -50,7 +51,7 @@ export default function Contact() {
           }, 5000); // hide message after 5 seconds
         },
         (error) => {
-          console.error(error)
+          console.error('error submitting contact form', error);
           alert('an error occurred submitting the form try again in a few minutes or email my mom if you know her email!');
           setTimeout(() => {
             setLoading(false);
