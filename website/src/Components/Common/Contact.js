@@ -31,6 +31,7 @@ export default function Contact() {
       'g-recaptcha-response': captchaValue,
     };
     setLoading(true);
+    setSubmitText('Sending...');
     emailjs
       .send(
         EMAILJS_SERVICE_ID,
